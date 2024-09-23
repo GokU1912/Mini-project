@@ -1,0 +1,177 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling with dynamic effects */
+header {
+    background-color: #4A90E2;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header:hover {
+    background-color: #4A90E2; /* Darken background on hover */
+    transform: translateY(-5px); /* Header moves up slightly on hover */
+}
+
+.logo {
+    max-width: 100px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1) rotate(5deg); /* Zoom and rotate slightly on hover */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+h1:hover {
+    color: #ff6600; /* Change color on hover */
+    letter-spacing: 2px; /* Widen the text spacing on hover */
+}
+
+/* Navigation styling */
+nav {
+    font-family: 'Roboto', sans-serif; /* New font */
+    background-color: #A0D5E1; /* Light teal background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s;
+}
+
+nav:hover {
+    background-color: #8FC9D3; /* Darker teal on hover */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 30px; /* Increased margin for more spacing */
+}
+
+nav a {
+    color: #333; /* Dark gray */
+    text-decoration: none;
+    padding: 15px 20px; /* Added horizontal padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #4A90E2; /* Change text color on hover */
+    background-color: transparent; /* No background hover effect */
+    transform: scale(1.05); /* Slightly enlarge text on hover */
+}
+
+/* Calculator section styling with box shadow animation */
+.calculator-section {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.calculator-section:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    transform: translateY(-10px); /* Lift the calculator section slightly */
+}
+
+/* Input styling with focus and hover effects */
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #28a745; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Add glow on focus */
+}
+
+input[type="number"]:hover {
+    border-color: #ff6600; /* Change border color on hover */
+}
+
+/* Button styling with hover and click effects */
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838; 
+    transform: scale(1.05); /* Slight scaling on hover */ 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+} 
+
+button:active { 
+    background-color: #1e7e34; 
+    transform: scale(.95); /* Reduce size on click */ 
+} 
+
+/* Result text styling with dynamic hover effect */
+#result {
+    margin-top: 20px; 
+    font-size: 1.2em; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+} 
+
+#result:hover { 
+    color: #ff6600; /* Change color on hover */ 
+    transform: scale(1.05); /* Grow slightly on hover */ 
+} 
+
+/* Footer Styling */ 
+footer { 
+    background-color: #4A90E2; 
+    color: #fff; 
+    text-align: center; 
+    padding: 10px; 
+    position: fixed; 
+    width: 100%; 
+    bottom: 0; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+} 
+
+footer:hover { 
+    background-color: #4A90E2; 
+    transform: translateY(-5px); 
+} 
+
+/* Blog post image hover effect with shadow */ 
+.blog-image { 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+} 
+
+.blog-image:hover { 
+    transform: scale(1.1); /* Enlarge the image on hover */ 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow */ 
+}
